@@ -108,10 +108,10 @@ input:checked + label .description {
     background-image: url('Images/hightrack.avif');
 }
 
-/* Adjustments for screen sizes between 769px and 1110px */
+
 @media (min-width: 769px) and (max-width: 1110px) {
     .card > .row > .description {
-        width: 180px; /* Adjust width */
+        width: 180px;
     }
 
     input:checked + label {
@@ -124,7 +124,7 @@ input:checked + label .description {
     }
 }
 
-/* Adjustments for screen sizes up to 768px */
+
 @media (max-width: 768px) {
     .container {
         height: auto;
@@ -155,9 +155,27 @@ input:checked + label .description {
         opacity: 1 !important;
         transform: translateY(0) !important;
     }
+    .card[for="c1"] {
+        background-image: url('Images/image.png'); /* Different image for smaller screens */
+    }
+    .card[for="c2"] {
+        background-image: url('Images/image\ \(1\).png'); /* Different image for smaller screens */
+    }
+    .card[for="c3"] {
+        background-image: url('Images/image\ \(2\).png'); /* Different image for smaller screens */
+    }
+    .card[for="c4"] {
+        background-image: url('Images/image\ \(3\).png'); /* Different image for smaller screens */
+    }
+    .card[for="c5"] {
+        background-image: url('Images/image\ \(5\).png'); /* Different image for smaller screens */
+    }
+    .card[for="c6"] {
+        background-image: url('Images/image\ \(4\).png'); /* Different image for smaller screens */
+    }
 }
 
-/* Adjustments for screen sizes up to 480px */
+
 @media (max-width: 480px) {
     .container {
         flex-direction: column; 
